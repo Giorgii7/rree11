@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            display: flex;
+            list-style: none;
+            margin-left: 850px;
+            gap: 90px;
+        }
+
+        h5 {
+            margin-left: 10px;
+            margin-top: 20px;
+            font-size: 15px;
+            color: rgb(36, 136, 198);
+        }
+
+        .aa {
+            text-decoration: none;
+            color: rgb(36, 136, 198);
+            font-size: 30px;
+            transition: 0.3s;
+        }
+
+        .aa:hover {
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .divv {
+            display: flex;
+            align-items: center;
+            background-color: rgb(58, 16, 151);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            /* animation */
+            animation: slideDown 0.8s ease;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: aliceblue;
+
+            /* animation */
+            animation: fadeIn 1s ease-in;
+        }
+
+        .h2 {
+            color: rgb(82, 172, 82);
+            margin-left: 60px;
+            margin-top: 120px;
+            font-size: 60px;
+
+            animation: slideLeft 1s ease;
+        }
+
+        .hrr {
+            border: 1px solid rgb(93, 180, 93);
+        }
+
+        .im1 {
+            width: 760px;
+            height: 550px;
+            margin-left: 750px;
+            margin-top: -10px;
+
+            animation: fadeZoom 1.2s ease;
+        }
+
+        .p1 {
+            margin-top: -450px;
+            margin-left: 50px;
+            color: green;
+            font-size: 20px;
+
+            animation: slideUp 1.2s ease;
+        }
+
+        .btn1 {
+            background-color: green;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn1:hover {
+            background-color: darkgreen;
+            transform: scale(1.1);
+        }
+
+        .blue {
+            padding: 100px;
+            margin-top: 212px;
+            background-color: rgb(206 240 253);
+
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hk {
+            font-size: 70px;
+            color: rgb(140, 209, 140);
+            margin-top: -80px;
+
+            animation: slideLeft 1s ease;
+        }
+
+        .pp1 {
+            color: green;
+            display: flex;
+            justify-content: center;
+            font-size: 23px;
+
+            animation: slideUp 1.2s ease;
+        }
+
+        /* ===== KEYFRAMES ===== */
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes slideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeZoom {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="divv">
+        <h5>Fresh Harvest</h5>
+        <nav>
+            <ul>
+                <li><a class="aa" href="index.html">Home</a></li>
+                <li><a class="aa" href="about.html">About</a></li>
+                <li><a class="aa" href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <h1 class="h2"> Celebrating Local Flavors</h1>
+        <hr class="hrr">
+    </div>
+
+    <div>
+        <img class="im1" src="ww.avif" alt="">
+        <p class="p1">
+            At Fresh Harvest, we’re passionate about farm-to-table <br>
+            dining. Our commitment to fresh, locally sourced <br>
+            ingredients sets us apart. With seasonal menus, we <br>
+            ensure the best produce from local farmers graces your <br>
+            plate, offering a sustainable dining experience. Immerse <br>
+            in our vibrant atmosphere, where ingredients foster a <br>
+            deep connection between food and community
+        </p>
+    </div>
+
+    <div>
+        <a class="btn1" href="">Explore More</a>
+    </div>
+
+    <div class="blue">
+        <h1 class="hk">Mission</h1>
+        <p class="pp1">
+            Our mission at Fresh Harvest is clear: to provide a unique farm-to-table <br>
+            experience that not only delights your taste buds but also supports <br>
+            local farmers and promotes sustainability. Through our seasonal <br>
+            menus and dedication to showcasing the best local produce, we aim <br>
+            to create a dining environment that values quality, freshness, and <br>
+            community connection
+        </p>
+    </div>
+
+</body>
+
+</html>
